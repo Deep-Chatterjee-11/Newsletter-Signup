@@ -62,17 +62,6 @@ app.post("/failure", function(req, res){
     res.redirect("/");
 });
 
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
     console.log("Server started on port 3000");
 });
-
-
-
-// MailChimp API key
-// 93b8c8f38cebc6624d5a54c09917faab-us21
-// 93b8c8f38cebc6624d5a54c09917faab-us21
-
-
-// List id or Audience id
-// 9f765e481d
-// 9f765e481d
